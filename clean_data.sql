@@ -1,3 +1,64 @@
+-- Data Cleaning, EDA Project For World_layoffs Data
+
+SELECT * 
+FROM layoffs;
+
+-- 1. Remove Duplicates
+-- 2. Standardize the data
+-- 3. Null Values or blank values
+-- 4. Remove Any columns 
+
+-- 1. Remove Duplicates 
+-- As we don't have primary key hence we will create similar value to it
+
+SELECT * 
+FROM layoffs; 
+
+-- created Backup table 
+
+CREATE TABLE world_layoffs.layoffs_staging 
+LIKE world_layoffs.layoffs;
+
+INSERT layoffs_staging 
+SELECT * FROM world_layoffs.layoffs;
+
+SELECT *
+FROM layoffs_staging;
+
+SELECT * , 
+ROW_Number() OVER(
+					Partition BY Company,location,industry, total_laid_off, 
+                    percentage_laid_off , date
+)  AS row_num
+FROM layoffs_staging;	
+
+WITH DUPLICATE_CTE AS
+(
+SELECT * , 
+ROW_Number() OVER(
+					Partition BY Company,location,industry, total_laid_off, 
+                    percentage_laid_off , date, stage, country, funds_raised_millions
+                    )AS row_num
+FROM layoffs_staging	
+)
+SELECT * FROM DUPLICATE_CTE
+WHERE row_num > 1;		
+-- Created Backup ,operational table
+CREATE TABLE `layoffs_staging2` (
+  `company` text,
+  `location` text,
+  `industry` text,
+  `total_laid_off` int DEFAULT NULL,
+  `percentage_laid_off` text,
+  `date` text,
+  `stage` text,
+  `country` text,
+  `funds_raised_millions` int DEFAULT NULL,
+  `row_num` int
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
 SELECT *
 FROM layoffs_staging2;
 
