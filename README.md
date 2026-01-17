@@ -1,15 +1,15 @@
-🌍 MySQL World Layoffs Data Cleaning & Analytics Project
-👤 Author: Vedant Ratnakar
+ MySQL World Layoffs Data Cleaning & Analytics Project
+ Author: Vedant Ratnakar
 
-🎯 Objective: Transform raw global layoffs data into a clean, analysis-ready dataset and deliver executive-level insights through SQL and Tableau dashboards.
+ Objective: Transform raw global layoffs data into a clean, analysis-ready dataset and deliver executive-level insights through SQL and Tableau dashboards.
 
-🚀 Project Overview
+ Project Overview
 
 This end-to-end analytics project focuses on cleaning, structuring, analyzing, and visualizing global company layoff data using MySQL and Tableau.
 
 The project simulates a real-world analytics workflow, starting from messy raw data to decision-ready dashboards used for identifying trends, risks, and patterns across industries, geographies, and time periods.
 
-🧹 Data Cleaning & Preparation (MySQL)
+ Data Cleaning & Preparation (MySQL)
 
 The dataset was cleaned and standardized using advanced SQL techniques to ensure accuracy and usability for analysis.
 
@@ -22,9 +22,9 @@ Step	Description
 5	Handled missing values using relational matching logic
 6	Removed records with insufficient or unusable data
 
-📌 Outcome: A clean, reliable dataset suitable for analytics and visualization.
+ Outcome: A clean, reliable dataset suitable for analytics and visualization.
 
-📈 Exploratory Data Analysis (EDA) – SQL Insights
+ Exploratory Data Analysis (EDA) – SQL Insights
 
 Key insights extracted using aggregation, window functions, and ranking logic:
 
@@ -38,7 +38,7 @@ Startup Shutdown Indicator: Multiple companies experienced 100% workforce layoff
 
 These insights formed the foundation for dashboard metrics and storytelling.
 
-📊 Tableau Dashboard Development (Delivered)
+ Tableau Dashboard Development (Delivered)
 
 An interactive Tableau dashboard was developed to present insights in a clear, executive-friendly format.
 
@@ -60,14 +60,15 @@ KPI-focused storytelling for decision-makers
 
 Business-ready visuals for presentations
 
-📌 Goal: Enable stakeholders to quickly identify risk patterns, industry impact, and global layoff trends.
+ Goal: Enable stakeholders to quickly identify risk patterns, industry impact, and global layoff trends.
 
 🛠 Tools & Technologies Used
 Category	Tools
 Data Cleaning & Analysis	MySQL
 Data Visualization	Tableau
 Version Control	GitHub
-💡 Key Skills Demonstrated
+
+ Key Skills Demonstrated
 
 Advanced SQL (CTEs, Window Functions, Data Cleaning)
 
@@ -79,7 +80,7 @@ Tableau dashboard design & storytelling
 
 End-to-end analytics project execution
 
-📌 Business Value
+ Business Value
 
 This project demonstrates the ability to:
 
