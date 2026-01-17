@@ -1,70 +1,92 @@
-# Mysql-World-layoffs-data-cleaning-project
-A SQL-based data cleaning and analysis project using global layoffs data. The dataset was cleaned by removing duplicates, standardizing fields, fixing dates, and handling null values. Insights were extracted using aggregation and window functions to identify trends by company, country, industry, and time.
+🌍 MySQL World Layoffs Data Cleaning & Analytics Project
+👤 Author: Vedant Ratnakar
 
+🎯 Objective: Transform raw global layoffs data into a clean, analysis-ready dataset and deliver executive-level insights through SQL and Tableau dashboards.
 
-# 📊 World Layoffs Dataset — SQL Cleaning & EDA Project
+🚀 Project Overview
 
-### 👤 Author: Vedant Ratnakar  
-💡 Goal: Clean raw company layoff records and uncover insights using SQL.
+This end-to-end analytics project focuses on cleaning, structuring, analyzing, and visualizing global company layoff data using MySQL and Tableau.
 
----
+The project simulates a real-world analytics workflow, starting from messy raw data to decision-ready dashboards used for identifying trends, risks, and patterns across industries, geographies, and time periods.
 
-## 🚀 Project Overview
+🧹 Data Cleaning & Preparation (MySQL)
 
-This project focuses on transforming raw layoff data into a structured, analysis-ready dataset.  
-The pipeline includes:
+The dataset was cleaned and standardized using advanced SQL techniques to ensure accuracy and usability for analysis.
 
-- Duplicate removal  
-- Standardization of text fields  
-- Date formatting  
-- Null value treatment  
-- Exploratory analysis  
+Key Data Cleaning Steps
+Step	Description
+1	Backed up original raw dataset
+2	Identified and removed duplicate records using ROW_NUMBER()
+3	Standardized text fields (company, industry, country)
+4	Converted date fields into SQL DATE format
+5	Handled missing values using relational matching logic
+6	Removed records with insufficient or unusable data
 
----
+📌 Outcome: A clean, reliable dataset suitable for analytics and visualization.
 
-## 🧹 Data Cleaning Steps
+📈 Exploratory Data Analysis (EDA) – SQL Insights
 
+Key insights extracted using aggregation, window functions, and ranking logic:
 
-| 1 | Backup original dataset 
-| 2 | Detect & remove duplicates using `ROW_NUMBER()` 
-| 3 | Trim and standardize fields (company, industry, country) 
-| 4 | Convert date format to SQL `DATE` 
-| 5 | Impute missing values using relational matching 
-| 6 | Delete entries with no usable information 
+Top Companies by Total Layoffs: Meta, Amazon, Google, Tesla
 
----
+Peak Layoff Period: 2022–2023 (post-pandemic market correction)
 
-## 📈 EDA Insights
+Most Impacted Industries: Technology, Retail, Transportation
 
-Some key insights derived:
+Startup Shutdown Indicator: Multiple companies experienced 100% workforce layoffs
 
-- **Top Companies by Layoffs:** Meta, Amazon, Google, Tesla  
-- **Highest Layoff Year:** 2022–2023 (Post-pandemic correction)  
-- **Most Affected Industries:** Tech, Retail, Transportation  
-- **Several startups had 100% layoffs — shutdown cases**
+These insights formed the foundation for dashboard metrics and storytelling.
 
----
+📊 Tableau Dashboard Development (Delivered)
 
-## 📊 Visualizations (Power BI / Tableau)
+An interactive Tableau dashboard was developed to present insights in a clear, executive-friendly format.
 
-Planned dashboards:
+Dashboard Metrics & Visuals
 
-- ✔ Total layoffs over time (line chart)
-- ✔ Layoffs by country (map chart)
-- ✔ Layoffs by industry (bar chart)
-- ✔ Top impacted companies (rank chart)
-- ✔ Rolling layoffs trend (cumulative line)
+✔ Total layoffs trend over time (Line Chart)
+✔ Layoffs by country (Geographical Map)
+✔ Layoffs by industry (Bar Chart)
+✔ Top companies by total layoffs (Dynamic Rank Chart)
+✔ Rolling & cumulative layoffs trend (Window calculations)
 
----
+Dashboard Capabilities
 
-## 🛠 Tools Used
+Interactive filters (Year, Country, Industry)
 
-| Category | Tool |
-|----------|------|
-| Data Cleaning | MySQL |
-| Visualization | Power BI / Tableau (Optional) |
-| Version Control | GitHub |
+Dynamic Top-N company ranking
 
----
+KPI-focused storytelling for decision-makers
 
+Business-ready visuals for presentations
 
+📌 Goal: Enable stakeholders to quickly identify risk patterns, industry impact, and global layoff trends.
+
+🛠 Tools & Technologies Used
+Category	Tools
+Data Cleaning & Analysis	MySQL
+Data Visualization	Tableau
+Version Control	GitHub
+💡 Key Skills Demonstrated
+
+Advanced SQL (CTEs, Window Functions, Data Cleaning)
+
+Exploratory Data Analysis (EDA)
+
+Business-focused insight generation
+
+Tableau dashboard design & storytelling
+
+End-to-end analytics project execution
+
+📌 Business Value
+
+This project demonstrates the ability to:
+
+Convert raw data into reliable analytics assets
+
+Identify macro-level workforce trends
+
+Support strategic decision-making through dashboards
+
+Communicate insights clearly to non-technical stakeholders
