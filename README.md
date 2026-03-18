@@ -1,92 +1,103 @@
-🌍 MySQL World Layoffs Data Cleaning & Analytics Project
-👤 Author: Vedant Ratnakar
+# Global Layoffs Analytics
+**MySQL · Tableau · End-to-End Analytics Project**
+*Author: Vedant Ratnakar*
 
-🎯 Objective: Transform raw global layoffs data into a clean, analysis-ready dataset and deliver executive-level insights through SQL and Tableau dashboards.
+---
 
-🚀 Project Overview
+## Overview
 
-This end-to-end analytics project focuses on cleaning, structuring, analyzing, and visualizing global company layoff data using MySQL and Tableau.
+This project transforms a messy, raw dataset of global company layoffs into a clean, analysis-ready asset — then surfaces executive-level insights through SQL and an interactive Tableau dashboard.
 
-The project simulates a real-world analytics workflow, starting from messy raw data to decision-ready dashboards used for identifying trends, risks, and patterns across industries, geographies, and time periods.
+The workflow mirrors a real-world analytics engagement: raw data in, decision-ready dashboards out.
 
-🧹 Data Cleaning & Preparation (MySQL)
+---
 
-The dataset was cleaned and standardized using advanced SQL techniques to ensure accuracy and usability for analysis.
+## Data Cleaning & Preparation
 
-Key Data Cleaning Steps
-Step	Description
-1	Backed up original raw dataset
-2	Identified and removed duplicate records using ROW_NUMBER()
-3	Standardized text fields (company, industry, country)
-4	Converted date fields into SQL DATE format
-5	Handled missing values using relational matching logic
-6	Removed records with insufficient or unusable data
+All cleaning was done in MySQL using advanced SQL techniques to ensure the dataset was accurate, consistent, and ready for analysis.
 
-📌 Outcome: A clean, reliable dataset suitable for analytics and visualization.
+**Steps taken:**
 
-📈 Exploratory Data Analysis (EDA) – SQL Insights
+1. Backed up the original raw dataset before any modifications
+2. Identified and removed duplicate records using `ROW_NUMBER()` window functions
+3. Standardized text fields — company names, industry labels, and country values
+4. Converted date strings into proper SQL `DATE` format
+5. Filled missing values using relational matching logic across related records
+6. Dropped records with insufficient or unresolvable data
 
-Key insights extracted using aggregation, window functions, and ranking logic:
+> **Outcome:** A clean, reliable dataset suitable for aggregation, ranking, and visualization.
 
-Top Companies by Total Layoffs: Meta, Amazon, Google, Tesla
+---
 
-Peak Layoff Period: 2022–2023 (post-pandemic market correction)
+## Exploratory Data Analysis
 
-Most Impacted Industries: Technology, Retail, Transportation
+Key insights were extracted using CTEs, window functions, and ranking queries.
 
-Startup Shutdown Indicator: Multiple companies experienced 100% workforce layoffs
+| Dimension | Finding |
+|---|---|
+| Top companies | Meta, Amazon, Google, Tesla, Microsoft |
+| Peak period | 2022–2023 (post-pandemic correction) |
+| Most impacted industries | Consumer, Retail, Transportation |
+| Startup shutdowns | 141 companies with 100% workforce reduction |
+| Geographic concentration | US accounts for ~67% of all tracked layoffs |
 
-These insights formed the foundation for dashboard metrics and storytelling.
+These findings directly shaped the metrics and narrative of the Tableau dashboard.
 
-📊 Tableau Dashboard Development (Delivered)
+---
 
-An interactive Tableau dashboard was developed to present insights in a clear, executive-friendly format.
+## Tableau Dashboard
 
-Dashboard Metrics & Visuals
+An interactive dashboard was built to present findings in a clear, executive-friendly format — enabling stakeholders to explore the data without writing a single query.
 
-✔ Total layoffs trend over time (Line Chart)
-✔ Layoffs by country (Geographical Map)
-✔ Layoffs by industry (Bar Chart)
-✔ Top companies by total layoffs (Dynamic Rank Chart)
-✔ Rolling & cumulative layoffs trend (Window calculations)
+### Visuals included
 
-Dashboard Capabilities
+- **Trend line** — total layoffs over time (monthly resolution)
+- **Geographic map** — layoff volume by country
+- **Industry bar chart** — ranked breakdown by sector impact
+- **Company ranking chart** — dynamic Top-N by total layoffs
+- **Stage analysis** — breakdown by funding stage (Post-IPO, Series B–D, Seed, etc.)
+- **Rolling/cumulative trend** — built using window function logic
 
-Interactive filters (Year, Country, Industry)
+### Dashboard capabilities
 
-Dynamic Top-N company ranking
+- Year, country, and industry filters (interactive)
+- Dynamic Top-N company ranking
+- KPI summary cards for at-a-glance metrics
+- Business-ready design suitable for presentations and board reports
 
-KPI-focused storytelling for decision-makers
+---
 
-Business-ready visuals for presentations
+## Tools & Technologies
 
-📌 Goal: Enable stakeholders to quickly identify risk patterns, industry impact, and global layoff trends.
+| Category | Tool |
+|---|---|
+| Data cleaning & analysis | MySQL |
+| Data visualization | Tableau |
+| Version control | GitHub |
 
-🛠 Tools & Technologies Used
-Category	Tools
-Data Cleaning & Analysis	MySQL
-Data Visualization	Tableau
-Version Control	GitHub
-💡 Key Skills Demonstrated
+---
 
-Advanced SQL (CTEs, Window Functions, Data Cleaning)
+## Skills Demonstrated
 
-Exploratory Data Analysis (EDA)
+- Advanced SQL — CTEs, window functions, data cleaning pipelines
+- Exploratory data analysis at scale
+- Business-focused insight generation from raw data
+- Tableau dashboard design and storytelling
+- End-to-end analytics project execution
 
-Business-focused insight generation
+---
 
-Tableau dashboard design & storytelling
-
-End-to-end analytics project execution
-
-📌 Business Value
+## Business Value
 
 This project demonstrates the ability to:
 
-Convert raw data into reliable analytics assets
+- Convert unreliable raw data into trusted analytics assets
+- Surface macro-level workforce trends across industries and geographies
+- Enable strategic workforce and investment decisions through dashboards
+- Communicate complex findings clearly to non-technical stakeholders
 
-Identify macro-level workforce trends
+The insights are relevant to HR leaders, investors, finance teams, and executives monitoring sector-level risk exposure in a volatile macro environment.
 
-Support strategic decision-making through dashboards
+---
 
-Communicate insights clearly to non-technical stakeholders
+*Data period: 2020–2023 · 2,361 layoff events · 50+ countries tracked*
